@@ -1,0 +1,66 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+
+print("")
+choice1 = input('Would you like to go "left" or "right" into the jungle?\n Type left or right: \n').lower()
+if (choice1 == "left"):
+  print("")
+  print("You have fallen into a snake pit...Game Over!")
+if (choice1 == "right"):
+  print("")
+  print("You have fallen down a hill, but you found an old raft to go downstream.")
+  print("")
+  print('You see locals who are waving you to dock your raft.\n Do you want to "dock" or "continue" downstream?')
+  
+  choice2 = input("Type Dock or Continue: \n").lower()
+  if (choice2 == "dock"):
+    print("")
+    print("The locals are religious Zealots that will sacrifice you to their jungle god...Game Over!")
+  if (choice2 == "continue"):
+    print("")
+    print("There's a waterfall up ahead, but a cave to your left! Will you go down the waterfall or abandon the raft for the cave?")
+    
+    choice3 = input('Type "waterfall" or "cave": \n').lower()
+    if (choice3 == "waterfall"):
+      print("The pirahnas have big plans for you...Game Over!")
+    if (choice3 == "cave"):
+      print("")
+      
+      choice4 = input('It\'s good to be on dry land! Inside of the cave are three paths, "left", "center", and "right".\nType Left, Center, or Right:\n' ).lower()
+      if (choice4 == "left"):
+        print("There's even more treasure here than legend predicted! You win!")
+      elif (choice4 == "center"):
+        print("You've stepped on a booby trap and if the poison from the darts don't kill you, starvation from paralysis will. Game Over!")
+      elif (choice4 == "right"):
+        print("The dark cave gave you no warning that you were walking through quick sand. Game Over!")
+      else:
+        print("Invalid choice. Game Over!")
+    else:
+      print("Invalid choice. Game Over!")
+  else:
+    print("Invalid choice. Game Over!")      
+else:
+  print("Invalid choice. Game Over!")
